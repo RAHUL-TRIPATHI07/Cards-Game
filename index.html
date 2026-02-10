@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Play Card </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video class="myVideo" autoplay muted loop>
+        <source src="avatars/0110 (1).mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+        <h1> Welcome to the Card Game! </h1>
+        <p> Get ready to play an exciting card game against the computer. </p>
+    </div>
+    <div id="userInput">
+        <div id="login">
+            <h2 class ="loginText"> Login </h2>
+            <p id="extText">Username</p>
+            <input type="text" id="username" class="input" style="width: 280px;" placeholder="📧">
+            <p id="extText">Password</p>
+            <input type="text" id="password" class="input" style="width: 280px;" placeholder="🔒">
+            <p id="extText">Forgot Password</p>
+            <button id="loginBtn" class="Btn">Login</button>
+            <h4 class ="loginText" id="changeToSingUp1">New User</h4>
+        </div>
+        <div id="signup1">
+            <h2 class ="loginText"> Personal Info </h2>
+            <p id="extText">Full Name</p>
+            <input type="text" id="s1_name" class="input" style="width: 280px;" placeholder="📧">
+            <p id="extText">Age</p>
+            <input type="text" id="s1_age" class="input" style="width: 280px;" placeholder="🔒">
+            <p id="extText">Agree</p>
+            <button id="singupBtn1" class="Btn">Sign Up</button>
+            <h4 class ="loginText" id="changeToSingUp2">Next</h4>
+        </div>
+        <div id="signup2">
+            <h2 class ="loginText"> Contacts </h2>
+            <p id="extText">Email</p>
+            <input type="text" id="s2_email" class="input" style="width: 280px;" placeholder="📧">
+            <p id="extText">Phone Nummber</p>
+            <input type="text" id="s2_phone" class="input" style="width: 280px;" placeholder="🔒">
+            <p id="extText">Agree</p>
+            <button id="singupBtn2" class="Btn">Sign Up</button>
+            <h4 class ="loginText" id="changeToSingUp3">Next</h4>
+        </div>
+        <div id="signup3">
+            <h2 class ="loginText"> Password </h2>
+            <p id="extText">Password</p>
+            <input type="password" id="s3_pass" class="input" style="width: 280px;" placeholder="📧">
+            <p id="extText">Confirm Password</p>
+            <input type="password" id="s3_confirm" class="input" style="width: 280px;" placeholder="🔒">
+            <p id="extText">Agree</p>
+            <button id="singupBtn3" class="Btn">Sign Up</button>
+            <h4 class ="loginText" id="changeToLogin">Already a User</h4>
+        </div>
+    </div>
+    <button id="skipBtn">Skip</button>
+    <script src="main1.js"></script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+#board{
+  display: flex;
+  border: none;
+  background-color: transparent;
+}
+
+#table{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height : 400px;
+  width : 600px;
+  border: none;
+  background-color: transparent;
+}
+
+.hand{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+#logoutBtn  {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: burlywood;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#logoutBtn:hover {
+  background-color: blanchedalmond;
+}
+
+#playerAvatar{
+  width : 50px;
+  height : 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  
+}
+#playerName{
+  position: absolute;
+  top: 10px;
+  right: 170px;
+  color : aliceblue;
+  font-family: cursive;
+}
+
+#computerHand1{
+  left: 28%;
+  top: 55%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-image: url("avatars/boy.png");
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(50deg);
+}
+
+#computerHand1Card{
+  width: 130px;
+  height: 180px;
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  transform: rotateY(-50deg);
+  background-color: wheat;
+  background-size: cover;
+  background-position: center;
+  display: none;
+  /* animation: dealCard1 1.9s cubic-bezier(.25,.8,.25,1) forwards; */
+}
+
+@keyframes dealCard1 {
+  0% {
+    transform: translate(-5%, 0) scale(0) rotate(0deg);
+    opacity: 1;
+    display: block;
+  }
+
+  40% {
+    transform: translate(100%, -20px) scale(1.1) rotate(15deg);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translate(150%, -24px) scale(1) rotate(-8deg);
+  }
+
+  100% {
+    transform: translate(420%, 50px) scale(0.6) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+
+#computerHand2{
+  top: 59.2%;
+  left: 48%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-image: url("avatars/man.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#computerHand2Card{
+  width: 120px;
+  height: 180px;
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  background-color: wheat;
+  display: none;
+  background-size: cover;
+  background-position: center;
+  /* animation: dealCard2 1.9s cubic-bezier(.25,.8,.25,1) forwards; */
+}
+@keyframes dealCard2 {
+  0% {
+    transform: translate(-5%, 0) scale(0) rotate(0deg);
+    opacity: 1;
+    display: block;
+  }
+
+  40% {
+    transform: translate(-50%, 20px) scale(1.1) rotate(15deg);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translate(-100%, -50px) scale(1) rotate(-8deg);
+  }
+
+  100% {
+    transform: translate(-50%, 70px) scale(0.6) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+#computerHand3{
+  top: 55%;
+  left: 70%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-image: url("avatars/old-man.png");
+  background-size: cover;
+  background-position: center;
+  
+}
+
+#computerHand3Card{
+  width: 120px;
+  height: 160px;
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  background-color: wheat;
+  background-size: cover;
+  background-position: center;
+  display: none;
+  /* animation: dealCard3 1.9s cubic-bezier(.25,.8,.25,1) forwards; */
+}
+@keyframes dealCard3 {
+  0% {
+    transform: translate(-5%, 0) scale(0) rotate(0deg);
+    opacity: 1;
+    display: block;
+  }
+
+  40% {
+    transform: translate(-50%, 20px) scale(1.1) rotate(15deg);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translate(-260%, -50px) scale(1) rotate(-8deg);
+  }
+
+  100% {
+    transform: translate(-400%, 50px) scale(0.6) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+#playerHand{
+  top: 75%;
+  left:70%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+#cards{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 90%;
+  left: 0%;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#decisionBox{
+  width: 550px;
+  height: 150px; 
+  position: absolute;
+  top: 50%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1;
+
+} 
+
+#decisionText{
+  color: white;
+  font-size: 24px;
+  font-family: cursive;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.crd{
+  width: 150px;
+  height: 150px;  
+  pointer-events: auto !important;
+  z-index: 9999;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#cad7{
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, 0) scale(0);
+  opacity: 0;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  animation: dealCard 1.9s cubic-bezier(.25,.8,.25,1) forwards; 
+}
+
+@keyframes dealCard {
+  0% {
+    transform: translate(0, 0) scale(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  40% {
+    transform: translate(0, -200px) scale(1.1) rotate(15deg);
+  }
+
+  70% {
+    transform: translate(0, -240px) scale(1) rotate(-8deg);
+  }
+
+  100% {
+    transform: translate(var(--tx), var(--ty)) scale(0.5) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+#backLobbyBtn{
+    padding:10px 20px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background: #4CAF50;
+    color:white;
+    transition:0.3s;
+}
+
+#backLobbyBtn:hover{
+    background:#45a049;
+}
+
+
+#fullScreen{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("avatars/pic9.png");
+  background-size: cover;
+  background-position: center;
+}

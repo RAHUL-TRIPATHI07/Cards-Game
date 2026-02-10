@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Lobby</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.7);  ">
+
+<div class="lobby-container">
+
+    <img id="lobbyAvatar" class="lobby-avatar">
+    <h2 id="lobbyUsername"></h2>
+
+    <div class="lobby-section">
+        <h3 id = " lobbyMiddleText">Game Rules</h3>
+        <p id ="gameRules">
+            • 4 players (You vs 3 Computers)<br>
+            • Trump suit decides power<br>
+            • Highest card wins the trick<br>
+            • Player with most tricks wins
+        </p>
+    </div>
+
+    <div class="lobby-section">
+        <h3>Your Stats</h3>
+        <p>Games Played: <span id="gamesPlayed"></span></p>
+        <p>Games Won: <span id="gamesWon"></span></p>
+        <p>Total Score: <span id="totalScore"></span></p>
+    </div>
+
+    <div class="lobby-buttons">
+        <button onclick="playGame()" class="lobbyPlayButton">Play Game</button>
+        <button onclick="logout()"class="lobbyPlayButton">Logout</button>
+    </div>
+
+</div>
+
+<script src="lobby.js"></script>
+</body>
+</html>

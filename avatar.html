@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Avatar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: black;">
+
+<h2 style="color: aliceblue;">Select Your Avatar</h2>
+
+<div class="avatar-grid">
+    <img src="avatars/a1.png" onclick="selectAvatar('a1.png')">
+    <img src="avatars/a2.png" onclick="selectAvatar('a2.png')">
+    <img src="avatars/a3.png" onclick="selectAvatar('a3.png')">
+    <img src="avatars/a4.png" onclick="selectAvatar('a4.png')">
+    <img src="avatars/a5.png" onclick="selectAvatar('a4.png')">
+    <img src="avatars/a6.png" onclick="selectAvatar('a4.png')">
+    <img src="avatars/a7.png" onclick="selectAvatar('a4.png')">
+    <img src="avatars/a8.png" onclick="selectAvatar('a4.png')">
+    <img src="avatars/a9.png" onclick="selectAvatar('a4.png')">
+    <img src="avatars/a10.png" onclick="selectAvatar('a4.png')">
+    <img src="avatars/a11.png" onclick="selectAvatar('a4.png')">
+    <img src="avatars/a12.png" onclick="selectAvatar('a4.png')">
+
+    
+</div>
+
+<script>
+async function selectAvatar(avatarName) {
+
+    const res = await fetch("/save-avatar", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ avatar: avatarName })
+    });
+
+    if (res.ok) {
+        window.location.href = "/main";
+    } else {
+        alert("Failed to save avatar");
+    }
+}
+</script>
+
+</body>
+</html>

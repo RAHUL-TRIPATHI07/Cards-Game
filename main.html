@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Card Throw Game</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <div id = "fullScreen">
+    <div class="player-info">
+
+      <img id="playerAvatar" src="" alt="Avatar">
+      <h3 id="playerName"></h3>
+
+    </div>
+
+    <button id = "logoutBtn" onclick="logout()">Logout</button>
+    <div id = "board">
+      <div id = "table"> </div>
+      <div id = "computerHand1" class = "hand">
+        <div id="computerHand1Card"></div>
+      </div>
+      <div id = "computerHand2" class = "hand">
+        <div id="computerHand2Card"></div>
+      </div>
+      <div id = "decisionBox">
+        <h2 id="decisionText"></h2>
+      </div>
+      <div id = "computerHand3" class = "hand">
+        <div id="computerHand3Card"></div>
+      </div>
+      <div id = "playerHand" class = "hand"></div>
+      <div id="cards">
+        <div id="card1" class="crd"></div>
+        <div id="card2" class="crd"></div>
+        <div id="card3" class="crd"></div>
+        <div id="card4" class="crd"></div>
+        <div id="card5" class="crd"></div>
+        <div id="card6" class="crd"></div>
+        <div id="card7" class="crd"></div>
+        <div id="card8" class="crd"></div>
+        <div id="card9" class="crd"></div>
+        <div id="card10" class="crd"></div>
+        <div id="card11" class="crd"></div>
+        <div id="card12" class="crd"></div>
+        <div id="card13" class="crd"></div>
+      </div>
+    </div>
+  </div>
+<script src="test.js"></script>
+
+<script>
+async function logout() {
+    await fetch("/logout");
+    window.location.href = "/";
+}
+</script>
+
+
+
+
+
+</body>
+</html>
