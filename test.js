@@ -679,6 +679,19 @@ function showFinalDecision(message){
         });
 }
 
+function preloadImages() {
+    const suits = ['Hearts','Diamonds','Clubs','Spades'];
+    const values = [2,3,4,5,6,7,8,9,10,11,12,13,14];
+
+    suits.forEach(suit => {
+        values.forEach(value => {
+            const img = new Image();
+            img.src = `cardsPic/${suit}${value}.jpeg`;
+        });
+    });
+}
+
+
 //==========
 
 let playerPlayedElement = null;
@@ -922,6 +935,7 @@ async function game() {
 
     
 }
+preloadImages();
 game();
 
 
