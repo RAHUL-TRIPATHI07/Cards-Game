@@ -1,0 +1,4 @@
+*.mp4
+database.db
+__pycache__/
+
