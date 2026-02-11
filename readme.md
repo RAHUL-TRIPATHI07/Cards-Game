@@ -106,7 +106,7 @@ Git (optional)
 Strps :-
 
 . Step 1: Clone Repository
-          git clone https://github.com/YOUR_USERNAME/Cards-Game.git
+          git clone https://github.com/RAHUL-TRIPATHI07/Cards-Game
           cd Cards-Game
 
 . Step 2: Install Dependencies
